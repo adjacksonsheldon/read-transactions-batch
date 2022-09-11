@@ -10,6 +10,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @ToString
 public class TransacaoDTO {
-    private String id;
+    private String transacaoId;
     private BigDecimal valor;
 }

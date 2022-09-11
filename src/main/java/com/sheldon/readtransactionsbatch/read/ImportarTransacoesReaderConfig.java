@@ -19,7 +19,7 @@ public class ImportarTransacoesReaderConfig {
 			@Value("#{jobParameters['arquivoClientes']}")Resource resource) {
 
 		final Range[] ranges = {new Range(1, 10), new Range(11, 20)};
-		final String[] names = {"id","valor"};
+		final String[] names = {"transacaoId","valor"};
 
 		return new FlatFileItemReaderBuilder<TransacaoDTO>()
 				.name("importarTransacoesReader")

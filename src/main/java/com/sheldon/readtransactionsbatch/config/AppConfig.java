@@ -13,8 +13,8 @@ public class AppConfig {
     @Value("${database-password}")
     private String password;
 
-    @Value("${JOB_DB_URL}")
-    private String jobDbUrl;
+    @Value("${SPRING_BATCH_DB_URL}")
+    private String springBatchDbUrl;
 
     @Value("${TRANSACTIONS_DB_URL}")
     private String transactionsDbUrl;
