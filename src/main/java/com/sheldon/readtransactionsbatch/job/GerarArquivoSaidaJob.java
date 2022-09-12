@@ -13,12 +13,12 @@ import org.springframework.context.annotation.Configuration;
 @EnableBatchProcessing
 @Configuration
 @RequiredArgsConstructor
-public class ImportarTransacoesJob {
+public class GerarArquivoSaidaJob {
 
     private final JobBuilderFactory jobBuilderFactory;
 
     @Bean
-    public Job importarTransacoes(@Qualifier("importarTransacoesStep") Step importarTransacoesStep) {
+    public Job gerarArquivoSaida(@Qualifier("gerarArquivoSaidaStep") Step importarTransacoesStep) {
         return jobBuilderFactory
                 .get("importarTransacoes")
                 .start(importarTransacoesStep)
